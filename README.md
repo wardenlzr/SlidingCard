@@ -3,6 +3,7 @@
 
 ### 没有废话，直接上效果
 项目中的效果：
-(https://github.com/wardenlzr/SlidingCard/blob/master/screenshot/project.gif)
+![截图1](https://github.com/wardenlzr/SlidingCard/blob/master/screenshot/project.gif)
+
 本Demo的效果：
-(https://github.com/wardenlzr/SlidingCard/blob/master/screenshot/demo.gif)
+![截图1](https://github.com/wardenlzr/SlidingCard/blob/master/screenshot/demo.gif)
