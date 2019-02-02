@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x603"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/riv_bg"
+        android:layout_width="@dimen/x603"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/y48"
+        android:scaleType="centerCrop"
+        android:src="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/riv_sort"
+        android:layout_width="@dimen/x518"
+        android:layout_height="@dimen/y500"
+        android:scaleType="centerCrop"
+        android:src="#f8f8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_sort_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:text="生活"
+        android:textColor="#4B3D31"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/riv_sort"
+        app:layout_constraintTop_toBottomOf="@+id/riv_sort" />
+
+    <LinearLayout
+        android:id="@+id/ll_circle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/y30"
+        android:paddingBottom="@dimen/y39"
+        app:layout_constraintEnd_toEndOf="@+id/riv_sort"
+        app:layout_constraintStart_toStartOf="@+id/tv_sort_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sort_name">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/civ_circle_icon"
+                android:layout_width="@dimen/x67"
+                android:layout_height="@dimen/x67"
+                android:src="#A0A" />
+
+            <TextView
+                android:id="@+id/tv_circle_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x20"
+                android:layout_marginEnd="@dimen/x24"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#131313"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_goto"
+                app:layout_constraintStart_toEndOf="@+id/civ_circle_icon"
+                app:layout_constraintTop_toTopOf="@+id/civ_circle_icon"
+                android:text="用户名最多十个字用户名最多十个字用户名最多十个字"/>
+
+            <TextView
+                android:id="@+id/tv_circle_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x20"
+                android:layout_marginTop="@dimen/y5"
+                android:layout_marginEnd="@dimen/x24"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#AFAFAF"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_goto"
+                app:layout_constraintStart_toEndOf="@id/civ_circle_icon"
+                app:layout_constraintTop_toBottomOf="@id/tv_circle_name"
+                android:text="1人加入" />
+
+            <TextView
+                android:id="@+id/tv_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y48"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x29"
+                android:paddingRight="@dimen/x29"
+                android:text="去圈子"
+                android:textColor="#FFBA3C"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/civ_circle_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/civ_circle_icon"
+                tools:ignore="HardcodedText" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_circle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25">
+
+            <ImageView
+                android:id="@+id/civ_circle_icon1"
+                android:layout_width="@dimen/x67"
+                android:layout_height="@dimen/x67"
+                android:src="#ABC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_circle_name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x20"
+                android:layout_marginEnd="@dimen/x24"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#131313"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_goto1"
+                app:layout_constraintStart_toEndOf="@+id/civ_circle_icon1"
+                app:layout_constraintTop_toTopOf="@+id/civ_circle_icon1"
+                android:text="用户名最多十个字用户名最多十个字用户名最多十个字" />
+
+            <TextView
+                android:id="@+id/tv_circle_count1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x20"
+                android:layout_marginTop="@dimen/y5"
+                android:layout_marginEnd="@dimen/x24"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#AFAFAF"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_goto1"
+                app:layout_constraintStart_toEndOf="@id/civ_circle_icon1"
+                app:layout_constraintTop_toBottomOf="@id/tv_circle_name1"
+                android:text="1人加入" />
+
+            <TextView
+                android:id="@+id/tv_goto1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y48"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x29"
+                android:paddingRight="@dimen/x29"
+                android:text="去圈子"
+                android:textColor="#FFBA3C"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/civ_circle_icon1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/civ_circle_icon1"
+                tools:ignore="HardcodedText" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!--   <com.common.customview.MyListView
+           android:id="@+id/mlv"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:divider="@null"
+           android:paddingBottom="@dimen/y39"
+           app:layout_constraintEnd_toEndOf="@+id/riv_sort"
+           app:layout_constraintStart_toStartOf="@+id/riv_sort"
+           app:layout_constraintTop_toBottomOf="@+id/tv_sort_name" />
+   -->
+</android.support.constraint.ConstraintLayout>

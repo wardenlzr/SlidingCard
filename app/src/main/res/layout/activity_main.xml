@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/iv_qzgcbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qz_qzgc_background"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_vpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y38"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y813"
+                android:layout_marginLeft="@dimen/x65"
+                android:layout_marginRight="@dimen/x65"
+                android:clipChildren="false"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--android:layout_marginTop="@dimen/y58"
+            应该是 clipChildren这个属性可以控制子view绘制在父View外面-->
+
+            <LinearLayout
+                android:id="@+id/ll_indicator"
+                android:layout_width="@dimen/x125"
+                android:layout_height="@dimen/y10"
+                android:layout_marginStart="@dimen/x150"
+                android:layout_marginTop="@dimen/y88"
+                android:layout_marginEnd="@dimen/x150"
+                android:orientation="horizontal"
+                android:background="#DDDDDD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vp">
+
+                <View
+                    android:id="@+id/v_indicator"
+                    android:layout_width="@dimen/x29"
+                    android:layout_height="@dimen/y10"
+                    android:background="#f0f" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
