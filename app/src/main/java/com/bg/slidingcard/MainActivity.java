@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         vpCircle.setOffscreenPageLimit(3);//确保不是首位时能看到左右的卡片
     }
 
+    public void test(View view) {
+        System.out.println("Hello, I am CSDN_LQR");
+    }
+
     private class CirclePageChangeListener implements ViewPager.OnPageChangeListener {
         private int lastValue = -1;
         private boolean isLeft = true;
