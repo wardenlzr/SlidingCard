@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bg.slidingcard.aop_test.TestAnnotation;
 import com.bg.slidingcard.databinding.ActivityMainBinding;
 import com.bg.slidingcard.weight.RecyclePagerAdapter;
 
@@ -59,8 +60,9 @@ public class MainActivity extends AppCompatActivity {
         vpCircle.setOffscreenPageLimit(3);//确保不是首位时能看到左右的卡片
     }
 
+    @TestAnnotation
     public void test(View view) {
-        System.out.println("Hello, I am CSDN_LQR");
+        System.out.println("Hello, I am test");
     }
 
     private class CirclePageChangeListener implements ViewPager.OnPageChangeListener {

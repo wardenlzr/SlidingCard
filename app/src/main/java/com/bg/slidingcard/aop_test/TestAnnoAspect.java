@@ -10,7 +10,8 @@ import org.aspectj.lang.annotation.Pointcut;
  */
 @Aspect
 public class TestAnnoAspect {
-    @Pointcut("execution(* com.bg.slidingcard.MainActivity.test(..))")
+//    @Pointcut("execution(* com.bg.slidingcard.MainActivity.test(..))")
+    @Pointcut("execution(@com.bg.slidingcard.aop_test.TestAnnotation  * *(..))")
     public void pointcut() {
 
     }
